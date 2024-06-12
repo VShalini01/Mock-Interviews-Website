@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Role Main</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/rolemain.css') }}">
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+            <h1 class="site-title">&emsp;Interviewie</h1>
+        </div>
+    </div>
+    
+    <div class="background">
+       <span></span>
+       <span></span>
+       <span></span>
+       <span></span>
+       <span></span>
+       <span></span>
+       <span></span>
+       <span></span>
+       <span></span>
+       <span></span>
+       <span></span>
+       <span></span>
+       <span></span>
+       <span></span>
+       <span></span>
+       <span></span>
+       <span></span>
+       <span></span>
+       <span></span>
+       <span></span>
+       <span></span>
+       <span></span>
+       <span></span>
+       <span></span>
+       <span></span>
+       <span></span>
+       <span></span>
+       <span></span>
+       <span></span>
+       <span></span>
+       <span></span>
+       <span></span>
+       <span></span>
+       <span></span>
+       <span></span>
+       <span></span>
+       <span></span>
+    </div>
+
+    <div class="content">
+        <p class="chosing">&emsp;Choose a Topic.</p>
+        <div class="buttons">
+            <button onclick="location.href='{{ url_for('role1') }}'">Software Engineer</button>
+            <button onclick="location.href='{{ url_for('role2') }}'">Data Scientist</button>
+            <button onclick="location.href='{{ url_for('role3') }}'">DevOps Engineer</button>
+            <button onclick="location.href='{{ url_for('role4') }}'">Front-End Developer</button>
+            <button onclick="location.href='{{ url_for('role5') }}'">Database Administrator</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/rolescript.js') }}"></script>
+</body>
+</html>
