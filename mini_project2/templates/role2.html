@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Role 1 Interview</title>
+    <link rel="stylesheet" href="/static/css/roles.css">
+</head>
+<body>
+    <div class="header" style="padding: 5px;">
+        <h1 class="site-title">&emsp;Interviewie</h1>
+    </div>
+    <div id="question-container">
+        <p id="question"></p>
+        <textarea id="answer" placeholder="Type your answer here"></textarea>
+        <button id="microphone">🎙️</button>
+        <button id="next">Next</button>
+    </div>
+    <div id="result-container" style="display: none;">
+        <h2>Results</h2>
+        <table id="results" class="results-table">
+            <thead>
+                <tr>
+                    <th>Question</th>
+                    <th>Your Answer</th>
+                    <th>Optimal Answer</th>
+                    <th>Similarity</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script src="/static/js/rolescript.js"></script>
+</body>
+</html>

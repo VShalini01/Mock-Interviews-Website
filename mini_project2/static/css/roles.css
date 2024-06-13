@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.header {
+    background-color: black;
+    padding: 5px;
+    text-align: left;
+    width: 100%;
+}
+
+.header-content {
+    display: inline-block;
+}
+
+.site-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    color: #A9BA9D;
+}
+
+#question-container {
+    text-align: center;
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#question {
+    margin-bottom: 20px;
+}
+
+#answer {
+    display: block;
+    width: 80%;
+    height: 300px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    resize: vertical;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    box-sizing: border-box;
+}
+
+#microphone {
+    display: block;
+    margin: 10px auto;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+}
+
+#next {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#next:hover {
+    background-color: white;
+    color: black;
+}
+
+#result-container {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.results-table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: white;
+}
+
+.results-table th, .results-table td {
+    border: 1px solid #dee2e6;
+    padding: 8px;
+    text-align: left;
+}
+
+.results-table th {
+    background-color: #333;
+}

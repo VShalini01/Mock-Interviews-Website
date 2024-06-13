@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interviewie</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lora&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Graphik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/desktop1.css') }}">
+  </head>
+  <body>
+    <div class="header" style="padding: 5px;">
+      <h1 class="site-title">&emsp;Interviewie</h1>
+      <h2 class="site-subtitle">we help</h2>
+    </div>
+    <div class="container-fluid d-flex flex-column justify-content-center align-items-center p-0">
+      <div class="row w-100 justify-content-center align-items-center flex-grow-1 m-0">
+        <div class="col-12 position-relative p-0 image-container">
+          <div class="overlay-text text-center">
+            <h1 class="mock-interview-title">Mock Interview</h1>
+            <p class="mock-interview-subtitle">keep practicing till <span style="color: #6CB4EE;">perfection</span>.</p>
+            <a href="{{ url_for('index') }}">
+              <button class="btn btn-dark get-started-btn">Get Started</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelector('.image-container').classList.add('show-overlay');
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,208 @@
+{
+    "topic1": [
+        {
+            "question": "Write a difference between a user-level thread and a kernel-level thread?",
+            "optimal_answer": "User-level threads are managed by user-level libraries, and the kernel is unaware of them. Kernel-level threads are managed by the operating system. User-level threads are faster to create and manage, while kernel-level threads provide better concurrency as the kernel can schedule them independently."
+        },
+        {
+            "question": "Give the advantages of multithreading?",
+            "optimal_answer": "Advantages of multithreading include improved application performance through parallelism, efficient use of CPU resources, better system responsiveness, and the ability to handle multiple tasks simultaneously."
+        },
+        {
+            "question": "Write a difference between process and program?",
+            "optimal_answer": "A program is a passive set of instructions stored on disk, whereas a process is an active instance of a program being executed, including the program code and its current activity."
+        },
+        {
+            "question": "Define the term dispatch latency?",
+            "optimal_answer": "Dispatch latency is the time it takes for the operating system to stop one process and start or resume another. This includes the time to save the state of the old process, switch the context, and load the state of the new process."
+        },
+        {
+            "question": "What are the goals of CPU scheduling?",
+            "optimal_answer": "The goals of CPU scheduling include maximizing CPU utilization, throughput, and response time while minimizing waiting time and turnaround time to ensure efficient and fair process management."
+        },
+        {
+            "question": "What is a critical section?",
+            "optimal_answer": "A critical section is a part of the code that accesses shared resources and must not be executed by more than one thread or process at a time to avoid data inconsistency and race conditions."
+        },
+        {
+            "question": "Difference between Multithreading and Multitasking?",
+            "optimal_answer": "Multithreading is the ability of a CPU to execute multiple threads concurrently within a single process. Multitasking is the ability of an operating system to run multiple processes simultaneously by sharing CPU resources."
+        },
+        {
+            "question": "What are the drawbacks of semaphores?",
+            "optimal_answer": "Drawbacks of semaphores include the possibility of deadlocks, complexity in implementation, difficulty in avoiding priority inversion, and potential for synchronization issues if not used correctly."
+        },
+        {
+            "question": "Define the term Bounded waiting?",
+            "optimal_answer": "Bounded waiting is a condition that ensures a process will only wait for a fixed, bounded amount of time before getting its turn to enter the critical section, preventing indefinite postponement."
+        },
+        {
+            "question": "What are the solutions to the critical section problem?",
+            "optimal_answer": "Solutions to the critical section problem include Peterson's solution, mutex locks, semaphores, and monitors, all of which ensure mutual exclusion, progress, and bounded waiting."
+        }
+    ],
+    "topic2": [
+        {
+            "question": "What are the advantages of DBMS over traditional file-based systems?",
+            "optimal_answer": "Advantages of DBMS over traditional file-based systems include data independence, reduced redundancy, improved data integrity, better data security, concurrent access, and efficient data management and retrieval."
+        },
+        {
+            "question": "What are super, primary, candidate, and foreign keys?",
+            "optimal_answer": "Super key is a set of attributes that uniquely identifies a row in a table. Primary key is a minimal super key with no redundant attributes. Candidate key is any attribute that can be a primary key. Foreign key is an attribute that creates a relationship between two tables."
+        },
+        {
+            "question": "What is the difference between primary key and unique constraints?",
+            "optimal_answer": "Primary key uniquely identifies each record in a table and cannot be null, while a unique constraint also ensures uniqueness but allows for one null value."
+        },
+        {
+            "question": "What is database normalization?",
+            "optimal_answer": "Database normalization is the process of structuring a database to minimize redundancy and dependency by dividing tables into smaller, related tables and defining relationships between them."
+        },
+        {
+            "question": "What is the difference between having and where clause?",
+            "optimal_answer": "The WHERE clause filters rows before any groupings are made, while the HAVING clause filters groups after the grouping operation is performed."
+        },
+        {
+            "question": "What is Join?",
+            "optimal_answer": "Join is a SQL operation that combines rows from two or more tables based on a related column, enabling queries across multiple tables."
+        },
+        {
+            "question": "What is Identity?",
+            "optimal_answer": "Identity in SQL is a column property that generates unique values automatically for new rows, commonly used for primary key columns."
+        },
+        {
+            "question": "What is a view in SQL? How to create a view?",
+            "optimal_answer": "A view in SQL is a virtual table representing a saved query on the data. Create a view using the `CREATE VIEW view_name AS SELECT column1, column2 FROM table_name WHERE condition;` syntax."
+        },
+        {
+            "question": "What is a Trigger?",
+            "optimal_answer": "A trigger is a database object that automatically executes a specified set of actions in response to certain events on a table, such as INSERT, UPDATE, or DELETE."
+        },
+        {
+            "question": "What is a transaction? What are ACID properties?",
+            "optimal_answer": "A transaction is a sequence of database operations that are treated as a single logical unit. ACID properties ensure reliable transactions: Atomicity, Consistency, Isolation, and Durability."
+        }
+    ],
+    "topic3": [
+        {
+            "question": "What is Object Oriented Programming (OOPs)?",
+            "optimal_answer": "Object Oriented Programming (OOP) is a programming paradigm based on the concept of objects, which are instances of classes. It emphasizes encapsulation, inheritance, and polymorphism."
+        },
+        {
+            "question": "List the main features of OOPs?",
+            "optimal_answer": "The main features of OOP include encapsulation, inheritance, polymorphism, and abstraction."
+        },
+        {
+            "question": "Give a brief about the features of OOPs",
+            "optimal_answer": "Encapsulation bundles data and methods, inheritance allows classes to inherit properties and methods, polymorphism enables objects to be treated as instances of their parent class, and abstraction hides complex implementation details."
+        },
+        {
+            "question": "What are access specifiers? What is their significance in OOPs?",
+            "optimal_answer": "Access specifiers define the scope of accessibility of class members. They include public, private, and protected, controlling how and where the members can be accessed."
+        },
+        {
+            "question": "What is the difference between Structured Programming and Object Oriented Programming?",
+            "optimal_answer": "Structured Programming is a procedural approach focusing on functions and logic sequence, while Object Oriented Programming is based on objects and classes, emphasizing encapsulation and reuse of code."
+        },
+        {
+            "question": "What are the different types of Polymorphism?",
+            "optimal_answer": "Types of polymorphism include compile-time (method overloading) and runtime (method overriding)."
+        },
+        {
+            "question": "What is the difference between overloading and overriding?",
+            "optimal_answer": "Overloading allows multiple methods with the same name but different parameters. Overriding allows a subclass to provide a specific implementation of a method already defined in its superclass."
+        },
+        {
+            "question": "What different types of inheritance are there?",
+            "optimal_answer": "Types of inheritance include single inheritance, multiple inheritance, hierarchical inheritance, multilevel inheritance, and hybrid inheritance."
+        },
+        {
+            "question": "What is an interface?",
+            "optimal_answer": "An interface is an abstract type that defines a contract of methods that implementing classes must fulfill, allowing for decoupled and modular code design."
+        },
+        {
+            "question": "How is an abstract class different from an interface?",
+            "optimal_answer": "An abstract class can have method implementations and state, while an interface can only have method signatures (until Java 8, where default methods were introduced). Abstract classes are used for shared behavior, interfaces for shared capability."
+        }
+    ],
+    "topic4": [
+        {
+            "question": "What is a microprocessor?",
+            "optimal_answer": "A microprocessor is an integrated circuit that contains the functions of a central processing unit (CPU) of a computer. It performs arithmetic and logic operations, and controls other parts of the system."
+        },
+        {
+            "question": "Explain the internal architecture of a RAM.",
+            "optimal_answer": "The internal architecture of RAM includes memory cells arranged in a grid of rows and columns, with a row decoder and column decoder, control logic, and sense amplifiers to read/write data."
+        },
+        {
+            "question": "How compiler compiles the interlinked libraries?",
+            "optimal_answer": "Compilers resolve interlinked libraries using the linker, which combines object code files and resolves symbols to create a single executable or library file. The linker ensures that all referenced functions and variables from different libraries are correctly addressed."
+    },
+    {
+        "question": "Explain the implementation of virtual methods, dynamic binding.",
+        "optimal_answer": "Virtual methods are implemented using a virtual table (vtable), where each class has a table of pointers to virtual functions. Dynamic binding refers to the process where the call to an overridden function is resolved at runtime, allowing the appropriate method of the derived class to be invoked."
+},
+{
+"question": "What is Multithreading?",
+"optimal_answer": "Multithreading is the ability of a CPU or a single process to manage its tasks by creating multiple threads, which are smaller units of process execution. It allows for concurrent execution, improving performance and resource utilization."
+},
+{
+"question": "What is the difference between a thread and a process?",
+"optimal_answer": "A thread is the smallest unit of execution within a process, sharing the same memory space and resources. A process is an independent program in execution with its own memory space and system resources."
+},
+{
+"question": "What is a Semaphore and a Mutex?",
+"optimal_answer": "A semaphore is a signaling mechanism used to control access to a common resource in a concurrent system by multiple processes. A mutex (mutual exclusion) is a locking mechanism used to synchronize access to a resource, ensuring only one thread can access the resource at a time."
+},
+{
+"question": "Explain the Producer-Consumer problem.",
+"optimal_answer": "The Producer-Consumer problem is a classic synchronization problem where the producer generates data and puts it into a buffer, while the consumer takes the data from the buffer. Proper synchronization ensures the buffer doesn't overflow or underflow."
+},
+{
+"question": "What is Deadlock?",
+"optimal_answer": "Deadlock is a situation in concurrent programming where two or more processes are unable to proceed because each is waiting for the other to release a resource, resulting in a standstill."
+},
+{
+"question": "Explain internal fragmentation and external fragmentation.",
+"optimal_answer": "Internal fragmentation occurs when allocated memory blocks have unused space due to fixed partitioning. External fragmentation happens when free memory is scattered in small blocks between allocated memory, preventing allocation of large contiguous memory blocks."
+}
+],
+"topic5": [
+{
+"question": "Can an array be resized at runtime?",
+"optimal_answer": "In most programming languages, arrays cannot be resized at runtime. However, dynamic arrays or array-like structures such as ArrayList in Java or Vector in C++ can dynamically resize as needed."
+},
+{
+"question": "What is the time complexity for accessing an element in an array?",
+"optimal_answer": "The time complexity for accessing an element in an array is O(1), as arrays allow direct access to elements via their index."
+},
+{
+"question": "What are the different types of linked lists?",
+"optimal_answer": "Different types of linked lists include singly linked lists, doubly linked lists, and circular linked lists."
+},
+{
+"question": "What are the advantages and disadvantages of Linked List?",
+"optimal_answer": "Advantages of linked lists include dynamic size and ease of insertion/deletion. Disadvantages include increased memory usage due to pointers and slower access time compared to arrays due to sequential traversal."
+},
+{
+"question": "How would you compare Dynamic Arrays Vs Linked Lists?",
+"optimal_answer": "Dynamic arrays provide fast access time (O(1)) and better cache locality but require resizing operations. Linked lists offer efficient insertions/deletions (O(1) for specific cases) but have slower access time (O(n)) and use more memory due to pointers."
+},
+{
+"question": "What is the time complexity of stack operations?",
+"optimal_answer": "The time complexity of stack operations, such as push and pop, is O(1) since elements are added and removed from the top of the stack."
+},
+{
+"question": "What is a postfix expression?",
+"optimal_answer": "A postfix expression is a mathematical notation in which operators follow their operands. It eliminates the need for parentheses to define operation order, as the position of the operator dictates the order of operations."
+},
+{
+"question": "How is a Queue implemented in an array?",
+"optimal_answer": "A queue can be implemented in an array using a circular buffer approach, where two pointers (front and rear) track the positions for dequeuing and enqueuing elements, respectively, and wrap around the array's end."
+},
+{
+"question": "What is a priority queue?",
+"optimal_answer": "A priority queue is an abstract data type where each element has a priority. Elements are dequeued based on their priority, with higher priority elements being dequeued before lower priority ones."
+}
+]
+}

@@ -1,0 +1,212 @@
+{
+    "role1": [
+        {
+            "question": "How would you implement a stack using an array?",
+            "optimal_answer": "A stack can be implemented using an array by maintaining a top index. Use push to add elements to the end and pop to remove the top element, adjusting the top index accordingly."
+        },
+        {
+            "question": "Describe the difference between deep and shallow copy.",
+            "optimal_answer": "A shallow copy duplicates the structure, not the elements. A deep copy duplicates the object and all objects referenced by it, creating completely independent objects."
+        },
+        {
+            "question": "How to check if a binary tree is a binary search tree.",
+            "optimal_answer": "Perform an in-order traversal and check if the nodes' values are in ascending order. Alternatively, ensure each node is greater than all nodes in its left subtree and less than those in its right subtree."
+        },
+        {
+            "question": "How do you handle memory management in C++?",
+            "optimal_answer": "Use `new` and `delete` for dynamic memory allocation and deallocation. Use smart pointers like `std::unique_ptr` and `std::shared_ptr` to manage memory and avoid leaks."
+        },
+        {
+            "question": "Implement a function to find the longest substring without repeating characters.",
+            "optimal_answer": "Use a sliding window with two pointers. Move the right pointer to expand the window and the left pointer to contract it when duplicates are found. Track the maximum length of the window."
+        },
+        {
+            "question": "Explain the concept of Big-O notation and provide examples.",
+            "optimal_answer": "Big-O notation describes the upper bound of an algorithm's time complexity relative to the input size. Examples: O(n) for linear, O(log n) for logarithmic, and O(n^2) for quadratic complexity."
+        },
+        {
+            "question": "How would you design a cache system?",
+            "optimal_answer": "Define a capacity and an eviction policy like LRU. Use a hash map for O(1) access and a doubly linked list to track usage order, updating the list on cache hits and misses."
+        },
+        {
+            "question": "Write a SQL query to find the second highest salary from a table.",
+            "optimal_answer": "Use a subquery to find the maximum salary less than the highest salary: `SELECT MAX(salary) FROM employees WHERE salary < (SELECT MAX(salary) FROM employees);`"
+        },
+        {
+            "question": "Describe the difference between TCP and UDP.",
+            "optimal_answer": "TCP is connection-oriented, providing reliable, ordered, and error-checked delivery of data. UDP is connectionless, sending packets without ensuring delivery, order, or error checking."
+        },
+        {
+            "question": "How would you optimize a slow-performing SQL query?",
+            "optimal_answer": "Analyze execution plans, index appropriate columns, avoid unnecessary calculations or joins, simplify complex queries, and ensure a well-designed database schema with normalized tables."
+        }
+    ],
+    "role2": [
+        {
+            "question": "Explain the bias-variance tradeoff in machine learning",
+            "optimal_answer": "The bias-variance tradeoff is about balancing model complexity and prediction error. High bias can cause underfitting, while high variance can cause overfitting."
+        },
+        {
+            "question": "How do you handle missing data in a dataset",
+            "optimal_answer": "Handle missing data by removing, imputing, or predicting missing values using methods like mean, median, mode, or machine learning algorithms."
+        },
+        {
+            "question": "Describe the difference between supervised and unsupervised learning",
+            "optimal_answer": "Supervised learning uses labeled data to train models, while unsupervised learning finds patterns and relationships in unlabeled data."
+        },
+        {
+            "question": "Implement a function to calculate the R-squared value",
+            "optimal_answer": "Calculate R-squared as 1 - (SS_residual / SS_total), where SS_residual is the sum of squared residuals and SS_total is the total sum of squares."
+        },
+        {
+            "question": "Explain the concept of p-value in statistical hypothesis testing",
+            "optimal_answer": "A p-value measures the probability of obtaining results at least as extreme as the observed results, under the null hypothesis. A low p-value indicates strong evidence against the null hypothesis."
+        },
+        {
+            "question": "How would you build a recommendation system",
+            "optimal_answer": "Build a recommendation system using collaborative filtering, content-based filtering, or hybrid methods, leveraging user behavior and item attributes."
+        },
+        {
+            "question": "Describe the k-means clustering algorithm",
+            "optimal_answer": "K-means clustering partitions data into k clusters by minimizing within-cluster variance. It iteratively assigns data points to the nearest cluster center and updates the centers."
+        },
+        {
+            "question": "How do you evaluate the performance of a classification model",
+            "optimal_answer": "Evaluate classification models using metrics like accuracy, precision, recall, F1 score, ROC-AUC, and confusion matrix."
+        },
+        {
+            "question": "Write a function to implement linear regression from scratch",
+            "optimal_answer": "Implement linear regression by calculating the slope and intercept using least squares, then predict using the line equation y = mx + c."
+        },
+        {
+            "question": "Explain the difference between precision and recall",
+            "optimal_answer": "Precision is the ratio of true positives to total predicted positives. Recall is the ratio of true positives to total actual positives. They balance false positives and false negatives respectively."
+        }
+    ],
+    "role3": [
+        {
+            "question": "Explain the process of continuous integration and continuous deployment (CI/CD).",
+            "optimal_answer": "CI/CD automates the process of integrating code changes, running tests, and deploying to production. It ensures frequent, reliable software updates."
+        },
+        {
+            "question": "How would you automate the deployment of a web application?",
+            "optimal_answer": "Automate deployment using CI/CD tools like Jenkins or GitHub Actions, containerization with Docker, and orchestration with Kubernetes or similar platforms."
+        },
+        {
+            "question": "Describe the differences between Docker and Kubernetes.",
+            "optimal_answer": "Docker is a containerization platform, while Kubernetes is an orchestration system for managing containerized applications across multiple hosts."
+        },
+        {
+            "question": "How do you handle monitoring and logging in a distributed system?",
+            "optimal_answer": "Use centralized logging systems like ELK stack and monitoring tools like Prometheus and Grafana to aggregate and analyze logs and metrics from all components."
+        },
+        {
+            "question": "Implement a script to check the status of a web server.",
+            "optimal_answer": "Use a simple script like `curl -s -o /dev/null -w '%{http_code}' http://yourserver.com` to check the HTTP status code of a web server."
+        },
+        {
+            "question": "Explain the concept of Infrastructure as Code (IaC).",
+            "optimal_answer": "IaC involves managing and provisioning computing infrastructure using machine-readable configuration files, enabling automated and consistent setups."
+        },
+        {
+            "question": "How would you manage secrets and configuration in a production environment?",
+            "optimal_answer": "Manage secrets using tools like HashiCorp Vault or AWS Secrets Manager, and use environment variables or configuration management tools for configuration."
+        },
+        {
+            "question": "Describe the process of scaling a web application.",
+            "optimal_answer": "Scale web applications vertically by adding resources to existing servers, or horizontally by adding more servers. Use load balancers and auto-scaling policies."
+        },
+        {
+            "question": "What are the best practices for securing a CI/CD pipeline?",
+            "optimal_answer": "Secure CI/CD pipelines by using encrypted connections, access controls, secret management, regular audits, and ensuring the integrity of build artifacts."
+        },
+        {
+            "question": "Explain the concept of load balancing and how you would implement it.",
+            "optimal_answer": "Load balancing distributes network or application traffic across multiple servers. Implement it using hardware devices, software solutions like HAProxy, or cloud-based services."
+        }
+    ],
+    "role4": [
+        {
+            "question": "How would you optimize a web page for performance?",
+            "optimal_answer": "Optimize web pages by minimizing HTTP requests, using compressed and optimized images, leveraging browser caching, and minifying CSS and JavaScript."
+        },
+        {
+            "question": "Explain the difference between React and Angular.",
+            "optimal_answer": "React is a library focused on building UI components, while Angular is a full-fledged framework that provides a comprehensive solution for building single-page applications."
+        },
+        {
+            "question": "Implement a responsive navigation bar using CSS.",
+            "optimal_answer": "Use CSS Flexbox or Grid for layout, media queries for responsiveness, and ensure the navigation bar adapts to different screen sizes gracefully."
+        },
+        {
+            "question": "Describe the concept of the virtual DOM in React.",
+            "optimal_answer": "The virtual DOM is an in-memory representation of the real DOM. React uses it to batch updates and optimize rendering, improving performance."
+        },
+        {
+            "question": "How do you handle state management in a React application?",
+            "optimal_answer": "Handle state using React's built-in hooks like useState and useReducer, or state management libraries like Redux or Context API for larger applications."
+        },
+        {
+            "question": "Write a function to debounce an input field.",
+            "optimal_answer": "Debounce an input field by delaying the processing of the input until the user has stopped typing for a specified time, reducing the number of function calls."
+        },
+        {
+            "question": "Explain the box model in CSS.",
+            "optimal_answer": "The box model describes the structure of a web page element, consisting of content, padding, border, and margin, which determine the element's size and space."
+        },
+        {
+            "question": "How would you implement lazy loading for images?",
+            "optimal_answer": "Implement lazy loading by loading images only when they are about to enter the viewport, using the Intersection Observer API or libraries like `lazysizes`."
+        },
+        {
+            "question": "Describe the difference between HTTP/1.1 and HTTP/2.",
+            "optimal_answer": "HTTP/2 introduces multiplexing, header compression, and server push, which improve performance over HTTP/1.1 by reducing latency and improving resource utilization."
+        },
+        {
+            "question": "Implement a to-do list application using JavaScript.",
+            "optimal_answer": "Create a to-do list by using HTML for structure, CSS for styling, and JavaScript for functionality, such as adding, removing, and marking tasks as complete."
+        }
+    ],
+    "role5": [
+        {
+            "question": "How do you perform a database backup and restore?",
+            "optimal_answer": "Perform backups using tools like `mysqldump` for MySQL or `pg_dump` for PostgreSQL, and restore using `mysql` or `psql` commands with the backup file."
+        },
+        {
+            "question": "Explain the concept of ACID properties in databases.",
+            "optimal_answer": "ACID properties ensure reliable transactions: Atomicity (all-or-nothing), Consistency (valid state), Isolation (independent transactions), and Durability (permanent changes)."
+        },
+        {
+            "question": "Write a SQL query to find duplicate records in a table.",
+            "optimal_answer": "Find duplicates using: `SELECT column, COUNT(*) FROM table GROUP BY column HAVING COUNT(*) > 1;`"
+        },
+        {
+            "question": "How would you design a highly available database system?",
+            "optimal_answer": "Design for high availability using replication, clustering, load balancing, and failover mechanisms to ensure continuous operation despite failures."
+        },
+        {
+            "question": "Describe the process of database normalization.",
+            "optimal_answer": "Normalize databases by organizing data to reduce redundancy and dependency, using normal forms from 1NF to 3NF and beyond to structure tables efficiently."
+        },
+        {
+            "question": "Explain the differences between SQL and NoSQL databases.",
+            "optimal_answer": "SQL databases use structured schemas and ACID transactions, suitable for complex queries. NoSQL databases offer flexible schemas, scalability, and high performance for specific use cases."
+        },
+        {
+            "question": "How do you optimize a database query for performance?",
+            "optimal_answer": "Optimize queries by indexing, analyzing execution plans, avoiding expensive operations, simplifying queries, and ensuring proper database schema design."
+        },
+        {
+            "question": "Implement a stored procedure to update records in a table.",
+            "optimal_answer": "Create a stored procedure using SQL syntax, defining parameters and the update logic. Example for MySQL: `CREATE PROCEDURE UpdateRecord(IN id INT, IN value VARCHAR(255)) BEGIN UPDATE table SET column = value WHERE id = id; END;`"
+        },
+        {
+            "question": "How do you handle database security and user permissions?",
+            "optimal_answer": "Handle security by implementing authentication, authorization, encryption, and regular audits. Grant user permissions based on the principle of least privilege."
+        },
+        {
+            "question": "Explain the concept of indexing and how it improves query performance.",
+            "optimal_answer": "Indexing creates data structures that improve the speed of data retrieval operations on a database table, reducing the amount of data that needs to be scanned."
+        }
+    ]
+}
