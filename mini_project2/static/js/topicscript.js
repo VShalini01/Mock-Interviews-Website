@@ -29,11 +29,20 @@ document.addEventListener('DOMContentLoaded', () => {
             displayQuestion();
         });
 
-    nextButton.addEventListener('click', () => {
-        const answer = answerElement.value;
-        answers.push(answer); // Store the answer
-        answerElement.value = '';
-        finalTranscript = '';
+        nextButton.addEventListener('click', () => {
+            const answer = answerElement.value;
+            if (answer.trim() === '') {
+                alert('Please provide an answer before moving to the next question.');
+                return;
+            }
+            if (isRecording) {
+                recognition.stop();
+                isRecording = false;
+                microphoneButton.textContent = '🎙️';
+            }
+            answers.push(answer);
+            answerElement.value = '';
+            finalTranscript = '';
 
         currentQuestionIndex++;
         if (currentQuestionIndex < 5) {
