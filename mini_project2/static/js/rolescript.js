@@ -29,11 +29,20 @@ document.addEventListener('DOMContentLoaded', () => {
             displayQuestion();
         });
 
-    nextButton.addEventListener('click', () => {
-        const answer = answerElement.value;
-        answers.push(answer); // Store the answer
-        answerElement.value = '';
-        finalTranscript = '';
+        nextButton.addEventListener('click', () => {
+            const answer = answerElement.value;
+            if (answer.trim() === '') {
+                alert('Please provide an answer before moving to the next question.');
+                return;
+            }
+            if (isRecording) {
+                recognition.stop();
+                isRecording = false;
+                microphoneButton.textContent = '🎙️';
+            }
+            answers.push(answer);
+            answerElement.value = '';
+            finalTranscript = '';
 
         currentQuestionIndex++;
         if (currentQuestionIndex < 5) {
@@ -100,33 +109,43 @@ document.addEventListener('DOMContentLoaded', () => {
         questionContainer.style.display = 'none';
         resultContainer.style.display = 'block';
         resultsTableBody.innerHTML = '';
-
+    
+        console.log('Questions:', questions);
+        console.log('Answers:', answers);
+    
         for (let index = 0; index < questions.length; index++) {
             const item = questions[index];
             const answer = answers[index];
+    
+            console.log('Current Question:', item);
+            console.log('User Answer:', answer);
+    
             const similarityScore = await getSimilarityScore(answer, item.optimal_answer);
-
+    
+            console.log('Similarity Score:', similarityScore);
+    
             const row = document.createElement('tr');
-
+    
             const questionCell = document.createElement('td');
             questionCell.textContent = item.question;
             row.appendChild(questionCell);
-
+    
             const userAnswerCell = document.createElement('td');
             userAnswerCell.textContent = answer;
             row.appendChild(userAnswerCell);
-
+    
             const optimalAnswerCell = document.createElement('td');
             optimalAnswerCell.textContent = item.optimal_answer;
             row.appendChild(optimalAnswerCell);
-
+    
             const similarityCell = document.createElement('td');
             similarityCell.textContent = `Similarity: ${(similarityScore * 100).toFixed(2)}%`;
             row.appendChild(similarityCell);
-
+    
             resultsTableBody.appendChild(row);
         }
     }
+    
 
     async function getSimilarityScore(userAnswer, optimalAnswer) {
         const response = await fetch('/similarity', {
