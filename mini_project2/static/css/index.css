@@ -1,0 +1,101 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+.header {
+    background-color: black;
+    padding: 5px;
+    text-align: left;
+    width: 100%;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-btn1{
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.about-btn2 {
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.about-btn1:hover, .about-btn2:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    .about-btn1, .about-btn2 {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
+
+.site-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    color: #A9BA9D; /* Color adjustment */
+}
+
+.content-container {
+    border: 2px solid white;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.select-btn {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.select-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+footer {
+    margin-top: 20px;
+    color: gray;
+}
