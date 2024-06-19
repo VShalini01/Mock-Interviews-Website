@@ -13,14 +13,19 @@
     <div class="header">
         <div class="header-content">
             <h1 class="site-title">Interviewie</h1>
-            <button class="about-btn" onclick="location.href='/index'">Home</button>
-            <button class="about-btn" onclick="location.href='/about'">About</button>
+            <div class="button-group">
+                <button class="about-btn" onclick="location.href='/index'">Home</button>
+                <button class="about-btn" onclick="location.href='/about'">About</button>
+            </div>
         </div>
     </div>
 
-    <div class="about-info">
-        xyz
-    </div>
+    <div class="content-container">
+        <h3>Select question type:</h3>
+        <div class="button-container">
+            <button class="select-btn" onclick="location.href='/rolemain'">Role Specific Questions</button>
+            <button class="select-btn" onclick="location.href='/topicmain'">Topic Specific Questions</button>
+        </div>
     </div>
 
     <footer>
