@@ -29,23 +29,33 @@ body.loaded {
     align-items: center;
 }
 
-.about-btn1{
-    background-color: transparent;
-    color: white;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-.about-btn2 {
-    background-color: transparent;
-    color: white;
-    cursor: pointer;
-    transition: all 0.3s ease;
+.button-group {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1;
 }
 
-.about-btn1:hover, .about-btn2:hover {
-    background-color: white;
-    color: black;
+.about-btn {
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+    margin-left: 10px;
+    padding: 5px 15px; /* Reduced padding */
+    border: 2px solid transparent; /* Added to maintain button size */
 }
+
+.about-btn:hover {
+    background-color: #353839; /* Lighter black */
+    color: white;
+}
+
+.about-btn:active {
+    opacity: 0.7;
+}
+
 
 /* Responsive design for smaller screens */
 @media screen and (max-width: 768px) {
