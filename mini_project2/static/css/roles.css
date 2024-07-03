@@ -133,3 +133,24 @@ body {
     background-color: #A9BA9D;
     color: black;
 }
+
+.back-btn {
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+    margin-top: 20px; /* Adjusted margin for better spacing */
+    padding: 15px 30px; /* Increased padding for a bigger button */
+    border: 2px solid transparent; /* Added to maintain button size */
+    font-size: 1.2rem; /* Increased font size */
+}
+
+.back-btn:hover {
+    background-color: #353839; /* Lighter black */
+    color: white;
+}
+
+.back-btn:active {
+    opacity: 0.7;
+}
